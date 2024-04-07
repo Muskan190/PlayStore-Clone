@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/topchartnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true"
+            >
+            <ImageView
+                android:id="@+id/topchartimage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/myimg"
+                android:scaleType="fitXY"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/topchartappname"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="Ludo King"
+               android:textColor="@color/black"
+               android:fontFamily="serif"
+               android:textSize="16sp"
+               />
+
+           <TextView
+               android:id="@+id/topchartappdesc"
+               android:layout_below="@id/topchartappname"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="Board"
+               android:textColor="@color/black"
+               android:textSize="14sp"
+               android:fontFamily="serif"
+               />
+           <TextView
+               android:id="@+id/topchartstorage"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/topchartappdesc"
+               android:layout_marginTop="5dp"
+               android:text="597 MB"
+               android:textColor="@color/black"
+               android:fontFamily="serif"
+               android:textSize="14sp"
+
+               />
+
+       </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

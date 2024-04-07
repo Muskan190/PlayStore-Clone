@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ForyouFragment"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textviewrecent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Based on your recent activity"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/forwardarrow"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_below="@+id/textviewrecent"
+            />
+        <TextView
+            android:id="@+id/textviewrecent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Premium apps"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/forwardarrow"
+            android:layout_below="@+id/recyclerview"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewrecent2"
+            android:scrollbars="horizontal"
+            />
+        <TextView
+            android:id="@+id/textviewrecent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-stop action"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/forwardarrow"
+            android:layout_below="@+id/recyclerview2"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textviewrecent3"
+            android:padding="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            >
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                app:iss_auto_cycle="true"
+                app:iss_period="1000"
+                app:iss_selected_dot="@drawable/default_selected_dot"
+                app:iss_delay="1000"
+                app:iss_text_align="CENTER"
+                app:iss_unselected_dot="@drawable/default_unselected_dot"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview"/>
+    </RelativeLayout>
+</ScrollView>

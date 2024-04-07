@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Games"
+        android:id="@+id/games"
+        android:icon="@drawable/games"/>
+    <item
+        android:title="Apps"
+        android:id="@+id/apps"
+        android:icon="@drawable/apps"/>
+    <item
+        android:title="Offers"
+        android:id="@+id/offers"
+        android:icon="@drawable/offer"/>
+    <item
+        android:title="Books"
+        android:id="@+id/books"
+        android:icon="@drawable/books"/>
+
+
+
+</menu>

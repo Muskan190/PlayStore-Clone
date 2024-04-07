@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TopchartsFragment"
+    android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/spinnerbackground">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Top Free"
+                android:textSize="16sp"
+                android:padding="6dp"
+                />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+            </Spinner>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="8dp"
+            android:id="@+id/topchartrecycler"
+            android:layout_below="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+    </RelativeLayout>
+</ScrollView>
